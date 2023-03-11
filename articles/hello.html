@@ -17,10 +17,25 @@
           margin-top: 5%;
           text-align: center;
         }
+        h4 {
+          color: rgb(163, 30, 163);
+        }
+        h3 {
+          color: rgb(163, 30, 163);
+        }
+        span.pl-k {
+          color: rgb(163, 30, 163);
+        }
+        span.pl-c1 {
+          color: green;
+        }
+        span.pl-en {
+          color: yellow;
+        }
     </style>
 </head>
 
-<body class="bg-dark text-white" style="font-family: 'IBM Plex Mono', monospace;">
+<body class="bg-dark text-white text-start" style="font-family: 'IBM Plex Mono', monospace;">
   <header>
       <div>
           <nav class="nav navbar-expand-lg container-fluid bg-body-emphasis">
@@ -28,7 +43,7 @@
                   <img src="../imgs/alien.png" alt="Alien Img" srcset="" class="align-text-bottom" width="50">
                   <h1 class="d-inline-block">natvs.html</h1>
               </a>
-              <a href="../html/blog.html" class="nav-item nav-link link-light">blog</a>
+              <a href="../html/blog.html" class="nav-item nav-link link-light btn btn-dark">blog</a>
               <div class="dropdown dropstart">
                   <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">mais</button>
                   <ul class="dropdown-menu ">
@@ -43,12 +58,79 @@
   </header>
 
     <div class="container text-white" style="margin-top: 5%;">
-        <h3 class="text-center" style="margin-bottom: 2%;">Olá, mundo! primeiro artigo :D</h3>
+        <h3 class="text-left" style="margin-bottom: 2%;">Olá, mundo!</h3>
         <img src="../imgs/hello-world.png" alt="hello-world" class="text-center img-fluid" style="border-radius: 5%;">
     </div>
-    <div>
+    <div class="container">
         <article>
+          <br>
+          <br>
+            <h4 class="text-left" style="margin-top: 1%;">Origem</h3>
+            <br>
+            <p>
+              "Hello, World!" foi uma frase que foi imortalizada
+               pelos criadores da linguagem de propósito geral,
+               a linguagem de programação C. Os norte-americanos Brian
+               Kernighan e Dennis Ritchie, fizeram-o no livro de 1978 entitulado
+              "The C Programming Language" (A Linguagem de Programação C) uma demonstração,
+               exemplificando o poder da linguagem.
+            </p>
+            <br>
+            <h4>Demonstrando o funcionamento do código</h4>
+            <p>
+                O código C "Hello World" é o que se segue:
+            </p>
+            <br>
+            <pre>
+              <span class="pl-k">#include </span><span class="pl-s"><span class="pl-pds">&lt;</span>stdio.h<span class="pl-pds">&gt;</span></span>
 
+              <span class="pl-k">int</span> <span class="pl-en">main</span>(<span class="pl-k">int</span> argc, <span class="pl-k">char</span> *argv[]) {
+	            <span class="pl-c1">printf</span>(<span class="pl-s"><span class="pl-pds">"</span>Hello, World!<span class="pl-cce">\n</span><span class="pl-pds">"</span></span>);
+	            <span class="pl-k">return</span> <span class="pl-c1">0</span>; <span class="pl-c">
+              }
+            </pre>
+            <br>
+            <h4>Biblioteca padrão IO (input, output)</h4>
+            <p>
+              A biblioteca padrão é incluída a partir da linha 1 com o trecho
+              "#include &lt;stdio.h&gt;". A biblioteca stdio.h nada mais é
+              do que uma biblioteca padrão de entrada e saída do usuário ou
+              usuária.
+            </p>
+            <p>
+              Após incluirmos a biblioteca padrão stdio.h, escrevemos
+              a função principal que é a descrita 'main' em amarelo.
+              Dentro dessa biblioteca que adicionamos temos a função
+              "printf()" que vai nos permitir imprimir a saída de texto
+              no terminal.
+            </p>
+            <br>
+            <h4>Valores de retorno</h4>
+            <p>
+              Ao final do código da função principal que no caso possui
+              o valor de retorno 'int', retornamos o valor 0, um inteiro,
+              lá na penúltima linha da função principal escrevendo "return 0;".
+            </p>
+            <h4>Compilação</h4>
+            <p>
+              Para compilarmos o arquivo escrevemos o nome do compilador que
+              usaremos, neste caso o 'gcc', após isso escrevemos o nome do
+              arquivo, e o '-o' para nomearmos o arquivo binário compilado
+              com o nome da nossa escolha.
+            </p>
+            <p>
+              O resultado é assim no final:
+            </p>
+            <pre>
+              gcc &lt;arquivo.c&gt; -o &lt;arquivo_binario&gt;
+            </pre>
+            <h4>Conclusão</h4>
+            <p>
+              Isso é tudo!! muito obrigado por ler esse post até aqui. Breve publicarei
+              novos posts, caso queira me acompanhar me siga no <a href="https://twitter.com/Natanaelv1eira">Twitter</a>
+              e fique por dentro desses e muito mais posts para além da programação que publicarei aqui.
+              Muito obrigado e até uma próxima :D.
+            </p>
         </article>
     </div>
     <footer style="margin-top: 30%; font-family: 'IBM Plex Mono', monospace;">
